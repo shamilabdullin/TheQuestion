@@ -1,0 +1,19 @@
+
+address.address{
+    color: green;
+    font-size: 0.8em;
+    font-weight: normal;
+    font-family: cursive;
+}
+.href:hover{
+    color: green;
+}
+.title{
+    font-size: 0.8em;
+    font-weight: normal;
+    font-family: academy engraved let, sans-serif;
+}
+
+.navbar-brand{
+    padding:5%
+}

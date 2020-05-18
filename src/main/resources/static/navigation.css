@@ -1,0 +1,107 @@
+
+.main{
+    display: grid;
+    grid-row-gap: 1em;
+    grid-column-gap: 1em;
+    grid-auto-rows: minmax(100px,auto);
+}
+
+.begin{
+    display: grid;
+    grid-row-gap: 1em;
+    grid-column-gap: 1em;
+    grid-template-columns: 13fr 1fr;
+    /*grid-auto-rows: minmax(100px,auto);*/
+}
+
+#logo{
+    background: rgba(196,243,255,0.61);
+    border-radius: 20px;
+    padding: 2px;
+    grid-column: 1/2;
+}
+
+#auth{
+    background: rgba(250, 248, 255, 0.61);
+    border-radius: 10px;
+    padding: 2px;
+    grid-column: 2/2;
+}
+
+#begin{
+    grid-column: 1/4;
+}
+
+#navigation{
+    /*   display: block;
+       list-style-type: disc;
+       margin-block-start: 1em;
+       margin-block-end: 1em;
+       margin-inline-start: 10px;
+       margin-inline-end: 10px;
+       border-block-start: 0.5em;
+       border-block-end: 0.5em;
+       border-inline-start: 20px;
+       border-inline-end: 20px;
+       padding-inline-start: 20px;
+       padding-inline-end: 20px;
+       padding-block-start: 40px;
+       padding-block-end: 40px;
+       position: absolute;
+       width: 10em;*/
+    background: rgba(196,243,255,0.61);
+    border-radius: 10px;
+    padding: 2px;
+    grid-column: 1/4;
+}
+#main{
+    /* display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 200px;
+    margin-inline-end: 10px;
+    border-block-start: 0.5em;
+    border-block-end: 0.5em;
+    border-inline-start: 20px;
+    border-inline-end: 20px;
+    padding-inline-start: 20px;
+    padding-inline-end: 20px;
+    padding-block-start: 40px;
+    padding-block-end: 40px;
+    position: absolute;*/
+    background: #F7F7F7;
+    padding: 2px;
+    background: rgba(196,243,255,0.61);
+    border-radius: 10px;
+    grid-column: 1/4;
+
+
+}
+#Author{
+    /*display: block;
+        margin-block-start: 600px;
+        margin-block-end: 20px;
+        margin-inline-start: 10px;
+        margin-inline-end: 10px;
+        border-block-start: 20px;
+        border-block-end: 20px;
+        border-inline-start: 20px;
+        border-inline-end: 20px;
+        padding-inline-start: 20px;
+        padding-inline-end: 20px;
+        padding-block-start: 20px;
+        padding-block-end: 80px;
+        border: dotted silver;*/
+
+    border-radius: 10px;
+    background: rgba(196,243,255,0.61);
+
+    padding: 2px;
+    grid-column: 1/4;
+
+}
+.cards{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%
+}

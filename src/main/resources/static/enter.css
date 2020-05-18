@@ -1,0 +1,37 @@
+textarea {
+    background:  rgba(196,243,255,0.61); /* Цвет фона */
+    border: 2px solid #a9c358; /* Параметры рамки */
+    padding: 10px; /* Поля */
+    width: 200%; /* Ширина */
+    height: 700px; /* Высота */
+    box-sizing: border-box; /* Алгоритм расчёта ширины */
+    font-size: 14px; /* Размер шрифта */
+    resize: none;
+}
+#update {
+    background:  rgba(196,243,255,0.61); /* Цвет фона */
+    border: 2px solid #a9c358; /* Параметры рамки */
+    padding: 10px; /* Поля */
+    width: 100%; /* Ширина */
+    height: 700px; /* Высота */
+    box-sizing: border-box; /* Алгоритм расчёта ширины */
+    font-size: 14px; /* Размер шрифта */
+    resize: none;
+}
+
+table{
+    background:  rgba(196,243,255,0.61); /* Цвет фона */
+    border: 2px solid #a9c358; /* Параметры рамки */
+    padding: 10px; /* Поля */
+    width: 100%; /* Ширина */
+    height: 100px; /* Высота */
+    box-sizing: border-box; /* Алгоритм расчёта ширины */
+    font-size: 14px; /* Размер шрифта */
+    resize: none;
+}
+#main{
+    padding: 20px;
+}
+#collection{
+    padding: 20px;
+}

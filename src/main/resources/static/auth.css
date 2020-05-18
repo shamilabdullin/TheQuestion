@@ -1,0 +1,25 @@
+form{
+	margin: 0 auto;
+	background: rgba(196,243,255,0.61);
+	width: 450px;
+	height: 200px;
+	padding: 20px;
+/*	box-shadow: 2px 2px 5px rgba(0,0,0,0.82)*/
+}
+input{
+	margin-top: 10px;
+	height: 20px;
+	width: 400px;
+	/*margin: 3px 3px 0px 5px;*/
+}
+button{
+	margin-top: 10px;
+	height: 35px;
+	width: 150px;
+	padding: 20px;
+}
+input#button{
+	height: 40px;
+	width: 100px;
+	margin-left: 150px;
+}
