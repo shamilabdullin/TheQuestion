@@ -6,6 +6,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -17,13 +18,14 @@ public class QuestionDto {
     private Long id;
     private String body;
     private Long userId;
-
+    private List<AnswerDto> answers = new ArrayList<>();
 
     public static QuestionDto from(Question question) {
         return QuestionDto.builder()
                 .id(question.getId())
                 .body(question.getBody())
                 .userId(question.getUser().getId())
+                .answers(AnswerDto.from(question.getAnswers()))
                 .build();
     }
 

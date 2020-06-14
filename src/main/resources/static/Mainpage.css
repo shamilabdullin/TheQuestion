@@ -9,11 +9,19 @@ address.address{
     color: green;
 }
 .title{
-    font-size: 0.8em;
+    margin-right: 150px;
+    margin-left: 150px;
     font-weight: normal;
-    font-family: academy engraved let, sans-serif;
+    font-family: Source Sans Pro,Helvetica,Arial,sans-serif;
 }
-
+.text{
+    margin-right: 100px;
+    margin-left: 100px;
+    font-family: Source Sans Pro,Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+}
 .navbar-brand{
     padding:5%
 }

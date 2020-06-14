@@ -21,7 +21,7 @@
     <script type="text/javascript" src="../static/regValid.js"></script>
     <title>Registration</title>
 </head>
-<body class="title">
+<body>
     <div>
         <nav class="navbar navbar-dark bg-dark">
             <a class="navbar-brand"> <img src="../static/logo.jpeg" width="100	" height="100" alt=""></a>
@@ -31,21 +31,21 @@
         </nav>
     </div>
     <div id="registration">
-        <h1 align="center">Registration</h1>
+        <h1 align="center">Регистрация</h1>
     <form action="/signUp" method="post">
         <label for="">Email</label> <input  name="email" placeholder="Email">
-        <label for="">Password</label><input  type="password" name="password" placeholder="Пароль">
-        <label for="">Birthday</label><input  type="date" name="date"  placeholder="01/01/1900">
+        <label for="">Пароль</label><input  type="password" name="password" placeholder="Пароль">
+        <label for="">Дата рождения</label><input  type="date" name="date"  placeholder="01/01/1900">
         <label>Gender</label><br>
         <div id="gender">
-        <label for="">Male</label><input id="male"  type="radio" value = "M" name="gender" >
-        <label for="">Female</label><input id="female" type="radio" value = "F" name="gender" >
+        <label for="">М</label><input id="male"  type="radio" value = "M" name="gender" >
+        <label for="">Ж</label><input id="female" type="radio" value = "F" name="gender" >
         </div>
-        <label for="">Country</label><br>
+        <label for="">Страна</label><br>
         <select name="country" >
-            <option name="country">France</option>
-            <option name="country">USA</option>
-            <option name="country">Russia</option>
+            <option name="country">Россия</option>
+            <option name="country">Молдавия</option>
+            <option name="country">США</option>
         </select><br>
         <input class="btn btn-outline-dark btn-sm" id="button" type="submit" onclick="valid(document.getElementById(registration))" value="Registration">
     </form>

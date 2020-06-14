@@ -4,31 +4,25 @@ import com.shamil.the_question.dto.QuestionDto;
 import com.shamil.the_question.models.Question;
 import com.shamil.the_question.models.User;
 import com.shamil.the_question.repositories.QuestionRepository;
-import com.shamil.the_question.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
 @Service
-public class QuestionServiceImpl implements QuestionService{
+public class QuestionServiceImpl implements QuestionService {
 
     @Autowired
     private QuestionRepository questionRepository;
-
-    @Autowired
-    private UserRepository userRepository;
-
-    public List<QuestionDto> getQuestions() {
-        List<Question> questions = questionRepository.findAll();
-        return QuestionDto.from(questions);
-    }
 
     @Override
     public List<QuestionDto> getAllQuestions() {
         return QuestionDto.from(questionRepository.findAll());
     }
 
+    @Override
+    @Transactional //Используя @Transactional, многие важные аспекты как распространяемость транзакций (propagation) обрабатываются автоматически.
     public QuestionDto getQuestion(Long id) {
         Question question = questionRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Question not found"));
@@ -36,8 +30,11 @@ public class QuestionServiceImpl implements QuestionService{
     }
 
     @Override
-    public void saveQuestion(QuestionDto form) {
-
+    public void saveQuestion(QuestionDto form, User user) {
+        Question question = new Question();
+        question.setBody(form.getBody());
+        question.setUser(user);
+        questionRepository.save(question);
     }
 
 
@@ -49,23 +46,5 @@ public class QuestionServiceImpl implements QuestionService{
     @Override
     public void updateQuestion(QuestionDto form, User user) {
 
-    }
-
-    /*@Override
-    public void saveQuestion(QuestionDto questionDto) {
-        Question question = new Question();
-        question.setBody(questionDto.getBody());
-        User user = userRepository.findById(questionDto.getUserId())
-                .orElseThrow(() -> new RuntimeException("User not found"));
-        question.setUser_id(user.getId());
-        questionRepository.save(question);
-    }*/
-
-    @Override
-    public void addQuestion(QuestionDto form, User user) {
-        Question question = new Question();
-        question.setBody(form.getBody());
-        question.setUser(user);
-        questionRepository.save(question);
     }
 }

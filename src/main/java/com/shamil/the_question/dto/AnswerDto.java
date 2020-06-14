@@ -19,6 +19,7 @@ public class AnswerDto {
     private Long userId;
     private String body;
     private String date;
+    private Long questionId;
 
     public static AnswerDto from(Answer answer) {
         return AnswerDto.builder()
@@ -26,6 +27,7 @@ public class AnswerDto {
                 .userId(answer.getUser().getId())
                 .body(answer.getBody())
                 .date(answer.getDate())
+                .questionId(answer.getQuestion().getId())
                 .build();
     }
 

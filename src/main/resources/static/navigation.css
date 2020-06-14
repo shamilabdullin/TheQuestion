@@ -2,8 +2,8 @@
 .main{
     display: grid;
     grid-row-gap: 1em;
-    grid-column-gap: 1em;
-    grid-auto-rows: minmax(100px,auto);
+    grid-column-gap: 10px;
+    grid-auto-rows: minmax(70px,auto);
 }
 
 .begin{
@@ -22,85 +22,39 @@
 }
 
 #auth{
-    background: rgba(250, 248, 255, 0.61);
-    border-radius: 10px;
-    padding: 2px;
+    background: whitesmoke;
+    font-family: Source Sans Pro,Helvetica,Arial,sans-serif;
     grid-column: 2/2;
 }
 
 #begin{
+    background: rgba(246,242,233,1);
+    margin-right: 100px;
+    margin-left: 100px;
     grid-column: 1/4;
+    font-family: Source Sans Pro,Helvetica,Arial,sans-serif;
 }
 
 #navigation{
-    /*   display: block;
-       list-style-type: disc;
-       margin-block-start: 1em;
-       margin-block-end: 1em;
-       margin-inline-start: 10px;
-       margin-inline-end: 10px;
-       border-block-start: 0.5em;
-       border-block-end: 0.5em;
-       border-inline-start: 20px;
-       border-inline-end: 20px;
-       padding-inline-start: 20px;
-       padding-inline-end: 20px;
-       padding-block-start: 40px;
-       padding-block-end: 40px;
-       position: absolute;
-       width: 10em;*/
-    background: rgba(196,243,255,0.61);
-    border-radius: 10px;
-    padding: 2px;
+    margin-right: 100px;
+    margin-left: 100px;
+    background: rgba(246,242,233,1);
     grid-column: 1/4;
+    font-family: Source Sans Pro,Helvetica,Arial,sans-serif;
+}
+#begin{
+
+    background: rgba(246,242,233,1);
+    grid-column: 1/4;
+    font-family: Source Sans Pro,Helvetica,Arial,sans-serif;
 }
 #main{
-    /* display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 200px;
-    margin-inline-end: 10px;
-    border-block-start: 0.5em;
-    border-block-end: 0.5em;
-    border-inline-start: 20px;
-    border-inline-end: 20px;
-    padding-inline-start: 20px;
-    padding-inline-end: 20px;
-    padding-block-start: 40px;
-    padding-block-end: 40px;
-    position: absolute;*/
+    font-family: Source Sans Pro,Helvetica,Arial,sans-serif;
     background: #F7F7F7;
-    padding: 2px;
-    background: rgba(196,243,255,0.61);
-    border-radius: 10px;
+    background: rgba(246,242,233,1);
     grid-column: 1/4;
-
-
 }
-#Author{
-    /*display: block;
-        margin-block-start: 600px;
-        margin-block-end: 20px;
-        margin-inline-start: 10px;
-        margin-inline-end: 10px;
-        border-block-start: 20px;
-        border-block-end: 20px;
-        border-inline-start: 20px;
-        border-inline-end: 20px;
-        padding-inline-start: 20px;
-        padding-inline-end: 20px;
-        padding-block-start: 20px;
-        padding-block-end: 80px;
-        border: dotted silver;*/
 
-    border-radius: 10px;
-    background: rgba(196,243,255,0.61);
-
-    padding: 2px;
-    grid-column: 1/4;
-
-}
 .cards{
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%

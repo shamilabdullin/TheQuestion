@@ -23,7 +23,7 @@ public class RegistrationAspect {
         log.info("Пользователь - открыл регистрацию");
     }
 
-    @Before(value = "execution(* com.shamil.the_question.controllers.SignUpController.signUp(*))") //перед каждым тестом
+    @Before(value = "execution(* com.shamil.the_question.controllers.SignUpController.signUp(*))") //перед методом
     public void before(JoinPoint joinPoint) {
         Object[] args = joinPoint.getArgs();
         SignUpDto user = (SignUpDto) args[0];

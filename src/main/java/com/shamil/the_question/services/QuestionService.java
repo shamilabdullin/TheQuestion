@@ -10,8 +10,7 @@ import java.util.List;
 public interface QuestionService {
     List<QuestionDto> getAllQuestions();
     QuestionDto getQuestion(Long id);
-    void saveQuestion(QuestionDto form);
-    void addQuestion(QuestionDto form, User user);
+    void saveQuestion(QuestionDto form, User user);
     void deleteQuestion(Question question);
     void updateQuestion(QuestionDto form,User user);
 }

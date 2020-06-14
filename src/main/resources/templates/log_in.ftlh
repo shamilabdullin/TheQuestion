@@ -14,7 +14,7 @@
     <script type="text/javascript" src="../static/authValid.js"></script>
 
 </head>
-    <body class="title">
+    <body>
         <div>
             <nav class="navbar navbar-dark bg-dark">
                 <a class="navbar-brand"> <img src="../static/logo.jpeg" width="100	" height="100" alt=""></a>
@@ -23,11 +23,11 @@
                 </div>
             </nav>
         </div>
-        <h1 align="center">Authorization </h1>
+        <h1 align="center">Авторизация </h1>
         <form name="registration" method="post" action="auth/process" id="form">
-            <label for="">Enter your email:</label><input type="email" name="email" placeholder="example@mail.com" id="email" title="Это имя видно другим пользователем" >
+            <label for="">Введите email:</label><input type="email" name="email" placeholder="example@mail.com" id="email" title="Это имя видно другим пользователем" >
             <br>
-            <label for="">Enter your password:</label> <input type="password" name="password" id="password"> <br><br>
+            <label for="">Введите пароль:</label> <input type="password" name="password" id="password"> <br><br>
             <input id="button" type="submit" class="btn btn-outline-dark btn-sm" onclick="valid(document.getElementById('form'))">
         </form>
     </body>
